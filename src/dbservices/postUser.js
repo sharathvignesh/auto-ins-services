@@ -2,7 +2,7 @@ const AWS = require("aws-sdk");
 const dbConfig = require("../config/dynamobdb");
 
 const postUser = async function (user) {
-  AWS.config.update(dbConfig.aws_remote_config);
+  AWS.config.update(process.env.NODE_ENV === 'development' ? dbConfig.aws_local_config : dbConfig.aws_remote_config);
   const DynamoDB = new AWS.DynamoDB.DocumentClient();
 
   const params = {
