@@ -1,0 +1,100 @@
+{
+    "car": {
+        "score": 10,
+        "liscenceType": {
+            "gold": 5,
+            "blue": 7,
+            "green": 9 
+        },
+        "age": [
+            {
+                "ageUpperLimit": 40,
+                "ageLowerLimit": 20,
+                "score": 7
+            },
+            {
+                "ageUpperLimit": 60,
+                "ageLowerLimit": 41,
+                "score": 5
+            },
+            {
+                "ageUpperLimit": 75,
+                "ageLowerLimit": 61,
+                "score": 9
+            }
+        ],
+        "estimatedDistancePerYear": [
+            {
+                "upperLimit": 3000,
+                "lowerLimit": 0,
+                "score": 5
+            },
+            {
+                "upperLimit": 7000,
+                "lowerLimit": 3001,
+                "score": 7
+            },
+            {
+                "lowerLimit": 7001,
+                "score": 10
+            }
+        ],
+        "towingService": {
+            "needed": 5,
+            "notNeeded": 0
+        },
+        "lawyerService": {
+            "needed": 8,
+            "notNeeded": 0
+        }
+    },
+    "bike": {
+        "score": 6,
+        "liscenceType": {
+            "gold": 2,
+            "blue": 5,
+            "green": 7 
+        },
+        "age": [
+            {
+                "ageUpperLimit": 40,
+                "ageLowerLimit": 20,
+                "score": 5
+            },
+            {
+                "ageUpperLimit": 60,
+                "ageLowerLimit": 41,
+                "score": 3
+            },
+            {
+                "ageUpperLimit": 75,
+                "ageLowerLimit": 61,
+                "score": 7
+            }
+        ],
+        "estimatedDistancePerYear": [
+            {
+                "upperLimit": 3000,
+                "lowerLimit": 0,
+                "score": 3
+            },
+            {
+                "upperLimit": 7000,
+                "lowerLimit": 3001,
+                "score": 5
+            },
+            {
+                "lowerLimit": 7001,
+                "score": 7
+            }
+        ],
+        "towingService": {
+            "needed": 3,
+            "notNeeded": 0
+        },
+        "lawyerService": {
+            "needed": 8,
+            "notNeeded": 0
+        }
+    }
+}

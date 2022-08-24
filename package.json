@@ -1,0 +1,26 @@
+{
+  "name": "auto-ins-services",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "cross-env NODE_ENV=development nodemon"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1201.0",
+    "cognito-express": "^3.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "express-bearer-token": "^2.4.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.19"
+  }
+}
