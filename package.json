@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "cross-env NODE_ENV=development nodemon"
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "dev:ec2": "cross-env PORT=80 NODE_ENV=development nodemon"
   },
   "dependencies": {
     "aws-sdk": "^2.1201.0",
