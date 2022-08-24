@@ -1,12 +1,13 @@
 const AWS = require("aws-sdk");
-const dbConfig = require("../config/dynamobdb");
+const getConfig = require("../config/dynamobdb");
 
 const postUser = async function (user) {
-  AWS.config.update(process.env.NODE_ENV === 'development' ? dbConfig.aws_local_config : dbConfig.aws_remote_config);
+  const fetchedConfig = await getConfig()
+  AWS.config.update(process.env.NODE_ENV === 'development' ? fetchedConfig.localConfig : fetchedConfig.remoteConfig);
   const DynamoDB = new AWS.DynamoDB.DocumentClient();
 
   const params = {
-    TableName: dbConfig.aws_table_name,
+    TableName: fetchedConfig.tableName,
     Item: {
       liscenceId: user.liscenceNumber,
       ...user,
