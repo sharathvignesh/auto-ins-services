@@ -12,6 +12,9 @@ var env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
 app.locals.ENV_DEVELOPMENT = env == 'development';
 
+const cors = require('cors');
+
+app.use(cors());
 app.use(bearerToken());
 app.use(logger('dev'));
 app.use(bodyParser.json());

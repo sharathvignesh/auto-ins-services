@@ -11,7 +11,6 @@ let saveUserSchema = yup.object({
     .max(12, "Liscence number must be 12 digits"),
   type: yup.mixed().oneOf(["car", "bike"]),
   liscenceType: yup.mixed().oneOf(["green", "blue", "gold"]),
-  age: yup.number().required().positive().integer(),
   estimateDistance: yup.number().required().positive().integer(),
   towingService: yup.boolean().required(),
   lawyerService: yup.boolean().required(),
